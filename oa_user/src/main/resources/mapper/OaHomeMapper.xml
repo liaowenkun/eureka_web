@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.mapper.OaHomeMapper">
+  <resultMap id="BaseResultMap" type="com.entity.OaHome">
+    <!--@mbg.generated-->
+    <!--@Table oa_home-->
+    <id column="id" jdbcType="INTEGER" property="id" />
+    <result column="longitude" jdbcType="VARCHAR" property="longitude" />
+    <result column="latitude" jdbcType="VARCHAR" property="latitude" />
+    <result column="maximum" jdbcType="INTEGER" property="maximum" />
+    <result column="work_time" jdbcType="TIMESTAMP" property="workTime" />
+    <result column="closing_time" jdbcType="TIMESTAMP" property="closingTime" />
+  </resultMap>
+  <sql id="Base_Column_List">
+    <!--@mbg.generated-->
+    id, longitude, latitude, maximum, work_time, closing_time
+  </sql>
+</mapper>

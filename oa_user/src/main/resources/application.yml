@@ -1,0 +1,35 @@
+#服务端口号
+server:
+  port: 8762
+#服务注册ip
+eureka:
+  client:
+    # Eureka Server向自己注册(集群的时候是要设置为true)
+    register-with-eureka: true
+    #因为自己是注册中心不需要检索服务信息
+    fetch-registry: true
+
+    service-url:
+      defaultZone: http://127.0.0.1:8761/eureka
+  server:
+    enable-self-preservation: false
+    wait-time-in-ms-when-sync-empty: 0
+
+#数据库连接
+spring:
+  datasource:
+    username: root
+    password: 1234
+    url: jdbc:mysql://localhost:3306/mytest?useUnicode=true&characterEncoding=utf-8&useSSL=true&serverTimezone=UTC
+    driver-class-name: com.mysql.jdbc.Driver
+
+mybatis:
+  mapper-locations: classpath:mapping/*Mapper.xml
+  type-aliases-package: com
+
+#showSql
+logging:
+  level:
+    com:
+      example:
+        mapper : debug

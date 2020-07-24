@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.mapper.OaCheckWorkMapper">
+  <resultMap id="BaseResultMap" type="com.entity.OaCheckWork">
+    <!--@mbg.generated-->
+    <!--@Table oa_check_work-->
+    <id column="id" jdbcType="BIGINT" property="id" />
+    <result column="user_id" jdbcType="INTEGER" property="userId" />
+    <result column="clock_in_time" jdbcType="TIMESTAMP" property="clockInTime" />
+    <result column="clock_in_position" jdbcType="VARCHAR" property="clockInPosition" />
+    <result column="clock_out_time" jdbcType="TIMESTAMP" property="clockOutTime" />
+    <result column="clock_out_position" jdbcType="VARCHAR" property="clockOutPosition" />
+  </resultMap>
+  <sql id="Base_Column_List">
+    <!--@mbg.generated-->
+    id, user_id, clock_in_time, clock_in_position, clock_out_time, clock_out_position
+  </sql>
+</mapper>

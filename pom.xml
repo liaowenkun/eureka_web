@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+    <!--spring-boot 版本-->
+    <parent>
+        <groupId>org.springframework.boot</groupId>
+        <artifactId>spring-boot-starter-parent</artifactId>
+        <version>2.2.5.RELEASE</version>
+        <relativePath/>
+    </parent>
+
+      <!--eureka_app 坐标版本-->
+    <groupId>org.eureka_app</groupId>
+    <artifactId>eureka_app</artifactId>
+    <packaging>pom</packaging>
+    <version>1.0-SNAPSHOT</version>
+    <modules>
+        <module>eureka_server</module>
+        <module>oa_user</module>
+        <module>eureka_api</module>
+    </modules>
+
+    <properties>
+        <java.version>1.8</java.version>
+        <!--//定义springcloud版本-->
+        <spring-cloud.version>Hoxton.SR3</spring-cloud.version>
+    </properties>
+  <!--  <dependencies>
+        <dependency>
+            <groupId>org.eureka_app</groupId>
+            <artifactId>eureka_api</artifactId>
+            <version>1.0-SNAPSHOT</version>
+        </dependency>
+
+    </dependencies>-->
+
+
+</project>
