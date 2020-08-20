@@ -52,4 +52,14 @@ public class LoginController {
         return new JSONObject() ;
     }
 
+
+    @GetMapping ("userAdminLogin")
+    @ResponseBody
+    public JSONObject userAdminLogin(String userName,String password) {
+        OaUser user = oaUserService.loginUser("2", "");
+        System.out.println(user.getUserName());
+
+        return new JSONObject() ;
+    }
+
 }

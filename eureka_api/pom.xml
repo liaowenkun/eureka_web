@@ -40,7 +40,12 @@
                 <artifactId>fastjson</artifactId>
                 <version>1.2.67</version>
             </dependency>
-
+         <!--RocketMQ 客户端依赖-->
+            <dependency>
+                <groupId>com.alibaba.rocketmq</groupId>
+                <artifactId>rocketmq-client</artifactId>
+                <version>3.2.6</version>
+            </dependency>
         </dependencies>
     <dependencyManagement>
         <dependencies>
