@@ -1,3 +1,6 @@
+com\httputil\HttpApiUtils.class
+com\httputil\SyncProducer.class
 com\rutrunJson\XHPageResult.class
 com\rutrunJson\XHResult.class
-com\httputil\HttpApiUtils.class
+com\httputil\SyncProducer$2.class
+com\httputil\SyncProducer$1.class
